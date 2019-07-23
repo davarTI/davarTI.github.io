@@ -1,0 +1,508 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Archivo Black', sans-serif;
+}
+.header{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  /* border: solid black; */
+}
+.hamburger{
+  position: absolute;
+  cursor: pointer;
+  left: 9%;
+  top: 15%;
+  /* transform: translate(-5%, -50%); */
+  z-index: 2;
+}
+.line{
+  width: 40px;
+  height: 3px;
+  background:#6d6a0ef7;
+  margin: 5px;
+}
+.line2{
+  width: 36px;
+  height: 3px;
+  background:yellow;
+  margin-left: 7px;
+}
+.background{
+  width: 25%;
+  height: 100%;
+  background:#030303;
+}
+
+/*Con este menú oculto la posición inicial para que no haga hover*/
+/* #menu{ 
+  position: relative;
+  left: -140%;
+  top: 25%;
+} */
+
+/*"este menú es para mantener el menú permanentemente pero se debe desactivar el menú de arriba"*/
+#menu{
+  /* position: relative;
+  left: 20%;
+  top: 25%;
+  color: #030303;
+  background: yellow;
+  width: 160px;
+  height: 295px;
+  border-radius: 3%; */
+  position: relative;
+  left: 93%;
+  top: 41%;
+  color: #030303;
+  background: yellow;
+  width: 116px;
+  height: 219px;
+  margin: -115px;
+  border-radius: 3%;
+}
+#menu li{
+  list-style: none;
+  padding: 30px;
+  margin: -23px;
+  text-align: center;
+}
+#menu li:hover{
+  color: #815855;
+}
+/* #menu.active{
+  position: relative;
+  left: 93%;
+  top: 41%;
+  color: #030303;
+  background: yellow;
+  width: 116px;
+  height: 219px;
+  margin: -115px;
+  border-radius: 3%;
+} */
+.image{
+  position: relative;
+  width: 75%;
+  height: 100%;
+  background-image: url("./computer.jpg");
+  background-size: cover;
+}
+.line-banner{
+  background:#d8b920d9;
+  position: absolute;
+  width: 390px;
+  height: 5px;
+  left: 27%;
+  bottom: 77%;
+}
+/* .line-banner2{
+  background:#d8b920d9;
+  position: absolute;
+  width: 330px;
+  height: 5px;
+  left: 25%;
+  bottom: 22%;
+} */
+.hello{
+  position: absolute;
+  color: yellow;
+  left: 25%;
+  bottom: 21%;
+  /* font-size: 4rem; */
+  font-size: 2.3rem;
+  width: auto;
+  height: auto;
+}
+.what{
+  display: inline-block;
+  width: 100%;
+  min-height: 100vh;
+  background:#c1c1c14d;
+}
+.what p{
+  position: relative;
+  margin: 30px;
+  text-align: center;
+  font-size: 1rem;
+}
+.title{
+  font-size: 3rem;
+  margin-top: 40px;
+  text-decoration: underline black;
+}
+.font-size{
+  font-size: 13px;
+}
+/* #bottom{
+  margin-bottom: 20px;
+} */
+.item{
+  display: flex;
+  justify-content: center;
+}
+.item p{
+  margin: 5px;
+}
+#a{
+  background: white;
+  text-decoration: none;
+  color: #030303;
+  font-size: 17px;
+  border: solid 1px #030303;
+  padding: 2px;
+}  
+#name-item{
+  background: yellow;
+  padding: 8px;
+}
+#name-item-footer{
+  background: #815855;
+  padding: 8px;
+  color: #030303;
+  margin: 10px;
+  width: 70%;
+  align-items: center;
+  left: 18px;
+}
+#name-item-footer:hover{
+  color: white;
+  transition: 0.13s;
+}
+#list{
+  background: white;
+  padding: 8px;
+}
+#color-p{
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+}
+.web, .devops{
+  width: 300px;
+  height: 350px;
+  background: white;
+  margin: 20px;
+  text-align: center;
+  font-weight: lighter;
+}
+.background1{
+  width: 300px;
+  height: 100vh;
+  background: #030303;
+}
+.projects{
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  background:white;
+}
+footer{
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  background: #030303;
+}
+.touch::after{
+  content: "";
+  /* position: absolute; */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  background: yellow;
+  clip-path: polygon(100% 0,0 50%, 100% 100%);
+}
+.touch{
+  display: flex;
+  width: 50%;
+  height: 100%;
+  align-items: center;
+  padding-left: 40px;
+}
+.touch p{
+  font-size: 27px;
+  text-align: center;
+  color: yellow;
+}
+.info{
+  width: 45%;
+  height: 100%;
+  padding-left: 40px;
+}
+.info p{
+  position: relative;
+  top: 20%;
+  font-size: 27px;
+  text-align: center;
+  color: white;
+}
+span{
+  color:#815855;
+}
+.icons{
+  position: relative;
+  top: 21%;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.btn i{
+  line-height: 90px;
+  font-size: 40px;
+  transition: 0.2s linear;
+  color: #815855;
+  margin: 20px 20px 0 20px;
+}
+.btn:hover i{
+  transform: scale(1.3);
+  color: #f1f1f1;
+}
+.text{
+  display: flex;
+  justify-content: center;
+  width: 25vw;
+  background: black;
+}
+.text p{
+  margin-top: 30rem;
+  width: 55px;
+  word-wrap: break-word;
+  /* text-align:center; */
+  font-size: 5.68rem;
+  color:  #f1f1f1;
+  background: #030303;
+}
+/* .text:hover p{
+  color:yellow;
+} */
+.side-right{
+  position: relative;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  background: #111;
+  padding: 20px;
+}
+/* .side-right .card{
+  position: relative;
+} */
+.card{
+  margin-left: 6px;
+}
+.card .face{
+  width: 250px;
+  height: 250px;
+  transition: 0.5s;
+}
+.card .face.face1{
+  position: relative;
+  display: flex;
+  background: #ececec; 
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(140px);
+  border-radius: 3% 3% 0 0;
+}
+.card:hover .face.face1{
+  background: yellow;
+  transform: translateY(0);
+}
+.card .face.face1 .content{
+  opacity: 1;
+  transition: 0.5s;
+  text-align: center;
+}
+.card:hover .face.face1 .content{
+  opacity: 1;
+}
+.card .face.face1 .content img{
+  max-width: 100px;
+}
+.card .face.face1 .content h3{
+  margin: 10px 0 0;
+  padding: 0;
+  color: #030303;
+  text-align: center;
+  font-size: 1.5 rem;
+}
+.card .face.face2{
+  position: relative;
+  display: flex;
+  background: #fff; 
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+  transform: translateY(-110px);
+  border-radius: 0 0 3% 3%;
+}
+.card:hover .face.face2{
+  transform: translateY(0);
+}
+
+
+/* RESPONSIVE */
+
+/* #menu {
+  display: none;
+} */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .hello{
+    font-size: 2.3rem;
+  }
+  .card{
+    margin-left: 5px;
+  }
+  .card .face{
+    width: 200px;
+  }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #menu {
+    left: 74%;
+    width: 134px;
+  }
+  .line-banner{
+    width: 350px;
+    left: 39%;
+  }
+  .hello{
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .text{
+    width: 14vw;
+  }
+  .text p{
+    margin-top: 25rem;
+    font-size: 5.5rem;
+  }
+  .card .face{
+    width: 200px;
+  }
+  .btn i {
+    font-size: 60px;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #menu {
+  left: 61%;
+  width: 150px;
+  }
+  .line-banner{
+    width: 207px;
+    left: 27%;
+  }
+  .line-banner2{
+    background:#d8b920d9;
+    position: absolute;
+    width: 258px;
+    height: 5px;
+    left: 69%;
+    bottom: 17%;
+    }
+  .hello{
+    font-size: 3rem;
+    text-align: left;
+  }
+  .text{
+    width: 8vw;
+  }
+  .text p{
+    margin-top: 7rem;
+    font-size: 5rem;
+  }
+  .card{
+    margin-left: 11px;
+  }
+  .touch p {
+    font-size: 40px;
+  }
+  .info p{
+    font-size: 35px;
+  }
+  .btn i {
+    font-size: 62px;
+  }
+  #name-item-footer{
+    left: 43px;
+  }
+  .special{
+    display: 
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #menu {
+    left: 54%;
+    width: 167px;
+  }
+  /* .line-banner{
+   display: none;
+  } */
+  .line-banner2{
+    left: 76%;
+    }
+  .hello{
+    font-size: 3.6rem;
+    text-align: center;
+  }
+  .card .face{
+    width: 240px;
+  }
+  .text{
+    width: 10vw;
+  }
+  .text p{
+    margin-top: 3rem;
+    font-size: 5rem;
+  }
+  .touch p {
+    font-size: 50px;
+  }
+  .info p{
+    font-size: 40px;
+  }
+  .btn i {
+    font-size: 72px;
+  }
+}
+@media (min-width: 1366px) {
+  .line-banner{
+    bottom: 87%;
+  }
+  #menu {
+    left: 51%;
+    width: 171px;
+  }
+  .card{
+    width: 250px;
+    margin-left: 40px; 
+  }
+  #name-item-footer{
+    left: 75px;
+  }
+}
+@media (min-width: 1535px) {
+  .hello{
+    font-size: 4rem;
+    text-align: center;
+  }
+  #menu {
+    left: 50%;
+    width: 175px;
+  }
+  .card{
+    width: 250px;
+    margin-left: 15px; 
+  }
+}

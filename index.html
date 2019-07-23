@@ -1,0 +1,280 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/50ead72691.js"></script>
+    <script type="text/javascript">
+
+        function togglemenu(){
+           document.getElementById('menu').classList.toggle('active');
+        }
+    </script>
+
+    <title>Hoja de vida</title>
+</head>
+<body>
+    <div class="header">
+        <div class="background">
+          <nav>
+            <div class="hamburger" onclick="togglemenu()">
+              <div class="line"></div>
+              <div class="line2"></div>
+              <div class="line"></div>
+             </div>
+           </nav>
+           <div id="menu">
+                <ul>
+                    <li><a href="#about" style="text-decoration: none;">Sobre mí</a></li>
+                    <li><a href="#experience" style="text-decoration: none;">Experiencia</a></li>
+                    <li><a href="#contact" style="text-decoration: none;">Contacto</a></li>
+                    <!-- <li>Lorem</li> -->
+                </ul>
+            </div>
+        </div>
+        <div class="image"></div>
+        <div class="line-banner"></div>
+        <div class="hello">
+            <!-- <div class="line-banner"></div> -->
+            <p>Hola, mi nombre es David, actualmente soy un Especialista de Soporte TI, pero que no pretende este sea su camino definitivo.</p>
+        </div>
+        <div class="line-banner2"></div>
+    </div>
+    <div class="what"><a name="about"></a>
+        <p class="title">¿LO QUÉ HAGO?</p>
+        <p id="color-p">Realmente soy un apasionado por la tecnología que nunca para de aprender; y tengo un corazón de Ingeniero DevOps.<br>
+        Me he capacitado en todos los campos de TI pero ahora mismo soy experto en Soporte.</p>
+        <p class="title">¿A DÓNDE VOY?</p>
+        <p id="color-p">Me encuentro actualmente estudiando el programa de Desarrollo Web Full Stack en <a id="a" href="https://www.academlo.com" target="_blank">Academlo</a>(duración: un año), y también estoy tomando el Programa profesional de <a id="a" href="https://www.microsoft.com/en-us/learning/azure-devops.aspx" target="_blank">Microsoft para DevOps.</a><br>
+        Mi deseo ferviente es ser Ingeniero DevOps, y además Programador Web Full Stack.</p>
+        <p class="title" id="bottom">¿Y CUÁLES SON MIS CONOCIMIENTOS?</p>
+        <div class="courses">
+            <!-- <div class="web">
+                <img src="web.png" alt="" style="padding-top: 20px; padding-bottom: 15px;">
+                <p>IT Support</p>
+                <p class="font-size">lorem imsup</p>
+                <p class="font-size">lorem imsup</p>
+                <p class="font-size">lorem imsup</p>
+            </div> -->
+            <div class="item">
+                <p id="name-item">Desarrollo Web :<hr></p>
+                <p id="list">HTML5, CSS3, Bootstrap, Wordpress, PHP, Vue, Flask</p>
+            </div>
+            <div class="item">
+                <p id="name-item">SysdAdmin :<hr></p>
+                <p id="list">Windows Server, Linux, Networking</p>
+            </div>
+            <div class="item">
+                <p id="name-item">Seguridad Informática :<hr></p>
+                <p id="list">Ethical Hacker, Administración de seguridad Informática</p>
+            </div>
+            <div class="item">
+                <p id="name-item">Cloud :<hr></p>
+                <p id="list">AWS, Azure, IBM, GCP</p>
+            </div>
+            <div class="item">
+                <p id="name-item">Programación :<hr></p>
+                <p id="list">Arquitectura de software, C, Python, Git</p>
+            </div>
+            <div class="item">
+                <p id="name-item">Big Data y Data Science :<hr></p>
+                <p id="list">Ingeniería de datos con Python, Big Data con AWS</p>
+            </div>
+            <div class="item">
+                <p id="name-item">DevOps :<hr></p>
+                <p id="list">Jenkins, GitLab, Docker, GKE, Swarm, Kubernetes</p>
+            </div>
+            <div class="item">
+                <p id="name-item">Bases de datos :<hr></p>
+                <p id="list">SQL, MySQL, MongoDB</p>
+            </div>
+            <div class="item">
+                <p id="name-item">Idiomas :<hr></p>
+                <p id="list">Inglés, Chino Mandarín</p>
+            </div>
+            <div class="item">
+                <p id="name-item">Otros :<hr></p>
+                <p id="list">Machine Learning, Atención al cliente, Metodologías Agiles y SCRUM, Gestión de proyectos</p>
+            </div>
+            <br>
+        </div>
+    </div>
+    <div class="projects"><a name="experience"></a>
+        <div class="text">
+            <p>Experiencia</p>
+        </div>
+        <div class="side-right">
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="devops.png" alt="">
+                        <h3>Freelance<br>(Enero 2016 - hasta ahora)</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <p id="color-p">
+                        - Instalación y configuración de redes LAN e inalámbricas.<br>
+                        -Reparación, mantenimiento preventivo y correctivo de computadores de
+                        escritorio, laptops e impresoras.
+                    </p>
+                    <!-- <a href="#">Read more</a> -->
+                </div>
+            </div>
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="web.png" alt="">
+                        <h3>LEXMARK Ecuador<br>(Septiembre 2014 - Diciembre 2015)</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <p id="color-p">
+                        - Administración de plataformas de Servicios de Impresión.<br>
+                        - Administración de recursos de equipos y consumibles. <br>
+                        - Soporte a Usuarios en impresión para Servicio de Rentas Internas (SRI).
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="devops.png" alt="">
+                        <h3>IT/CORP<br>(Febrero 2014 - Septiembre 2014)</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <p id="color-p">
+                        - Mantenimiento preventivo y correctivo de computadores de escritorio, laptops e impresoras. <br>
+                        - Instalación de redes. <br>
+                        - Soporte técnico a clientes corporativos.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="web.png" alt="">
+                        <h3>SMARTPRO<br>(Julio 2013 - Febrero 2014)<br></h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <p id="color-p">
+                        - Mantenimiento preventivo y correctivo de computadores de escritorio, laptops e impresoras multifunción. <br>
+                        - Soporte a Usuarios a nivel nacional.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="devops.png" alt="">
+                        <h3>CELEC EP UNIDAD DE NEGOCIO TERMOPICHINCHA<br>(Noviembre 2012 - Mayo 2013)</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <p id="color-p">
+                        - Mantenimiento preventivo y correctivo de computadores de escritorio, laptops e impresoras multifunción. <br>
+                        - Soporte a Usuarios a nivel nacional sobretodo la región Amazónica.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="web.png" alt="">
+                        <h3>EMSYS<br>(Noviembre 2011 - Mayo 2012)</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <p id="color-p">
+                        - Agente de Soporte a usuarios en Banco PROMERICA. <br>
+                        - Reparación de computadoras de escritorio, laptops y servidores.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="devops.png" alt="">
+                        <h3>BANCO DEL AUSTRO S.A.<br>(Noviembre 2009 - Noviembre 2011)</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <p id="color-p">- Soporte tecnológico y asistente operativo del departamento de Cooperativas.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="web.png" alt="">
+                        <h3>EASYMEDIA<br>(Julio 2008 - Febrero 2009)</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <p id="color-p">- Soporte técnico de software propio en RIVAS HERRERA (EMPRESA DE PUBLICIDAD).</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="devops.png" alt="">
+                        <h3>VARRTEL<br>(Enero 2008 - Marzo 2008)</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <p id="color-p">
+                        - Técnico para Proyecto de Implementación de DOMAIN CONTROLLER.<br>
+                        - Migración de perfiles al dominio.
+                        - Help desk de primer nivel.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="web.png" alt="">
+                        <h3>GLOBALDEV<br>(Junio 2007 - Diciembre 2007)</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <p id="color-p">
+                        - Técnico implementador de software en “SECRETARIA TÉCNICA DEL MINISTERIO DE COORDINACIÓN DE DESARROLLO  SOCIAL”.<br>
+                        - Test de validación y control de calidad de software.<br>
+                        - Digitalización y digitación de información para archivo.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="devops.png" alt="">
+                        <h3>DELTATRONIC<br>(Junio 2006 - Mayo 2007)</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <p id="color-p">
+                        - Mantenimiento preventivo, y reparación de computadores de escritorio, laptops e impresoras.<br>
+                        - Soporte técnico a nivel nacional.<br>
+                        -Instalación de redes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer><a name="contact"></a>
+        <div class="touch">
+            <p>Contacto&nbsp;</p>
+        </div>
+        <div class="info">
+            <div class="icons">
+                    <p class="btn"><a href="https://www.linkedin.com/in/deivaar-daveti/" target="_blank" style="text-decoration: none;"><i class="fab fa-linkedin"></a></i></p>
+                    <p class="btn"><a href="mailto:daveti.armijos@gmail.com" target="_blank"><i class="fab fa-google"></i></a></p>
+            </div>
+            <p><span>Ciudad : <br></span>Quito, Ecuador</p>
+            <p><span>Móvil</span> : 59380594651</p>
+            <p id="name-item-footer"><a href="https://1drv.ms/b/s!AGZa74hu9rFphXs" target="_blank" style="text-decoration: none;">Mi full CV aquí</a></p>
+        </div>
+    </footer>
+</body>
+</html>
