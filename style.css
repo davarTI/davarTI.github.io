@@ -64,12 +64,14 @@
   /* margin: -115px; */
   /* border-radius: 3%; */
 }
+#menu ul{
+  overflow-y: hidden;
+}
 #menu li{
   list-style: none;
   padding: 30px;
   margin: -27px;
   text-align: center;
-  overflow-y: hidden;
 }
 /* #menu.active{
   position: relative;
@@ -249,6 +251,7 @@ footer{
   text-align: center;
   color: white;
   margin-left: -25px;
+  overflow-y: hidden;
 }
 span{
   color:#815855;
@@ -266,7 +269,6 @@ span{
   transition: 0.2s linear;
   color: #815855;
   margin: 20px 20px 0 20px;
-  overflow-y: hidden;
 }
 .btn:hover i{
   transform: scale(1.3);
