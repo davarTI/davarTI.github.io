@@ -69,6 +69,7 @@
   padding: 30px;
   margin: -27px;
   text-align: center;
+  overflow-y: hidden;
 }
 /* #menu.active{
   position: relative;
@@ -265,6 +266,7 @@ span{
   transition: 0.2s linear;
   color: #815855;
   margin: 20px 20px 0 20px;
+  overflow-y: hidden;
 }
 .btn:hover i{
   transform: scale(1.3);
